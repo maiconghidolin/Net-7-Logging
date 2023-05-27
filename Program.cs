@@ -1,4 +1,5 @@
 using Enrichers;
+using Extensions;
 using Middlewares;
 using Serilog;
 
@@ -33,7 +34,11 @@ app.UseAuthentication();
 
 app.UseAuthorization();
 
-app.UseMiddleware<MiddlewareException>();
+// can use like that
+//app.UseMiddleware<ExceptionMiddleware>();
+
+// or can use a extension method
+app.UseExceptionMiddleware();
 
 app.MapControllers();
 

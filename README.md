@@ -1,6 +1,7 @@
 # .Net 7 Logging
 
-A little example of how to use Serilog in .NET 7 project.
+This is an extension of the [.Net 7 Middlewares](https://github.com/maiconghidolin/Net-7-Middlewares) project.
+Here I show a little example of how to use Serilog in .NET 7 project.
 
 Used Tools and Technologies:
  - .NET 7
